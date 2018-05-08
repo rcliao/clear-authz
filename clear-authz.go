@@ -17,7 +17,7 @@ import (
 )
 
 var (
-	pattern = regexp.MustCompile(`https://acme-v01\.api\.letsencrypt\.org/acme/authz/[a-zA-Z0-9_-]+`)
+	pattern = regexp.MustCompile(`https://acme-[a-z0-9]+\.api\.letsencrypt\.org/acme/authz/[a-zA-Z0-9_-]+`)
 )
 
 func main() {
